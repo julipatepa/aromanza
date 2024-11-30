@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="descarga.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="carrito.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Umbral-Místico</title>
+   
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Umbral-Místico</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-success" href="https://wa.me/1234567890" target="_blank">
+                <img src="imagenes/whatsapp.png" alt="Teléfono" style="width: 20px; margin-right: 8px;">
+                Contacto
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/imgencarrusel.jpg" class="d-block w-100" alt="Imagen 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Primer Diapositiva</h5>
+            <p>Contenido de muestra para la primera diapositiva.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/imagencarrusel1.jpg" class="d-block w-100" alt="Imagen 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Segunda Diapositiva</h5>
+            <p>Contenido de muestra para la segunda diapositiva.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/imagencarrusel2.jpg" class="d-block w-100" alt="Imagen 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tercera Diapositiva</h5>
+            <p>Contenido de muestra para la tercera diapositiva.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="container my-5">
+      <h2 id="productos" class="text-center mb-4">Nuestros Productos</h2>
+      <div class="row">
+          <!-- Generar 12 productos -->
+          <!-- Producto 1 al 12 -->
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/aromanza4.webp" class="card-img-top" alt="Producto 1">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 1</h5>
+                      <p class="card-text">$10.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 1" data-price="10">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/aromanza3.webp" class="card-img-top" alt="Producto 2">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 2</h5>
+                      <p class="card-text">$20.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 2" data-price="20">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/aromanza2.webp" class="card-img-top" alt="Producto 3">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 3</h5>
+                      <p class="card-text">$30.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 3" data-price="30">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/aromanza1.webp" class="card-img-top" alt="Producto 4">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 4</h5>
+                      <p class="card-text">$40.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 4" data-price="40">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/aromanza.webp" class="card-img-top" alt="Producto 5">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 5</h5>
+                      <p class="card-text">$50.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 5" data-price="50">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/magicos6.webp" class="card-img-top" alt="Producto 6">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 6</h5>
+                      <p class="card-text">$60.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 6" data-price="60">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/magicos5.webp" class="card-img-top" alt="Producto 7">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 7</h5>
+                      <p class="card-text">$70.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 7" data-price="70">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/magicos4.webp" class="card-img-top" alt="Producto 8">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 8</h5>
+                      <p class="card-text">$80.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 8" data-price="80">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/magicos3.webp" class="card-img-top" alt="Producto 9">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 9</h5>
+                      <p class="card-text">$90.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 9" data-price="90">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/magicos2.webp" class="card-img-top" alt="Producto 10">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 10</h5>
+                      <p class="card-text">$100.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 10" data-price="100">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/magicos1.webp" class="card-img-top" alt="Producto 11">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 11</h5>
+                      <p class="card-text">$110.00</p>
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 11" data-price="110">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="imagenes/magicos.webp" class="card-img-top" alt="Producto 12">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Producto 12</h5>
+                      <p class="card-text">$120.00</p>
+                      
+                      <button class="btn btn-primary add-to-cart" data-name="Producto 12" data-price="120">
+                          Agregar al carrito
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    
+  </section>
+  
+  
+  <!-- Carrito de Compras -->
+  <section class="container my-5">
+      <h2 class="text-center mb-4">Carrito de Compras</h2>
+      <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Acciones</th>
+              </tr>
+          </thead>
+          <tbody id="cart-items">
+              <!-- Items del carrito se agregarán aquí dinámicamente -->
+          </tbody>
+      </table>
+      <div class="text-end">
+          <h4>Total: $<span id="cart-total">0.00</span></h4>
+      </div>
+      <div class="text-end">
+          
+          <a id="pay-button" href="https://link.mercadopago.com.ar/sahumeriosmp" class="btn btn-success" role="button">Ir al Pago</a>
+
+      </div>
+  </section>
+  
+ 
+    
+  
+
+  <!-- Footer -->
+<footer class="footer text-white bg-dark pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Contáctanos</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-phone"></i> Teléfono: <a href="tel:+1234567890" class="text-white">+123 456 7890</a></li>
+          <li><i class="bi bi-envelope"></i> Correo: <a href="mailto:info@umbral-mistico.com" class="text-white">info@umbral-mistico.com</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Síguenos</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://facebook.com" target="_blank" class="text-white">
+              <i class="bi bi-facebook"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" class="text-white">
+              <i class="bi bi-twitter"></i> Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank" class="text-white">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Conoce nuestros sahumerios</h5>
+        <p class="text-white">Ofrecemos sahumerios de calidad, perfectos para crear ambientes relajantes y espirituales. Descubre aromas únicos que transformarán tu espacio y bienestar. ¡Haz de cada momento algo especial!</p>
+      </div>
+      
+    </div>
+    <div class="text-center mt-4">
+      <p>&copy; 2024 Umbral-Místico. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+  
+  
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+      <a href="https://wa.me/1538479551" target="_blank">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp" class="img-fluid" width="50">
+      </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carrito.js"></script>
+    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+
+
+
+  </body>
+</html>
