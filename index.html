@@ -9,8 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="carrito.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <title>Umbral-Místico</title>
    
@@ -19,25 +17,25 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Umbral-Místico</a>
+        <a class="navbar-brand d-flex justify-content-center align-items-center" href="index.html">
+          <img class="icono rounded-circle" src="imagenes/icono.jpg" alt="Icono" style="height: 80px;">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item">
-              <a class="nav-link btn btn-success" href="https://wa.me/1234567890" target="_blank">
-                <img src="imagenes/whatsapp.png" alt="Teléfono" style="width: 20px; margin-right: 8px;">
-                Contacto
-              </a>
+              <a class="nav-link btn btn-success " href="https://wa.me/1234567890" target="_blank"><i class="bi bi-whatsapp" style="font-family: 'Arial', sans-serif;">Contacto</i></a>
             </li>
+            <li class="nav-item"><a class="nav-link btn btn-success" href="#info"><i style="font-family: 'Arial', sans-serif;">Informacion</i></a></li>
+            <li class="nav-item"><a class="nav-link btn btn-success" href="#productos"><i style="font-family: 'Arial', sans-serif;">Productos</i></a></li>
             
           </ul>
         </div>
       </div>
     </nav>
+    
 
     <!-- Carousel -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -74,186 +72,174 @@
       </button>
     </div>
 
-    <section class="container my-5">
-      <h2 id="productos" class="text-center mb-4">Nuestros Productos</h2>
-      <div class="row">
-          <!-- Generar 12 productos -->
-          <!-- Producto 1 al 12 -->
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/aromanza4.webp" class="card-img-top" alt="Producto 1">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 1</h5>
-                      <p class="card-text">$10.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 1" data-price="10">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/aromanza3.webp" class="card-img-top" alt="Producto 2">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 2</h5>
-                      <p class="card-text">$20.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 2" data-price="20">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/aromanza2.webp" class="card-img-top" alt="Producto 3">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 3</h5>
-                      <p class="card-text">$30.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 3" data-price="30">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/aromanza1.webp" class="card-img-top" alt="Producto 4">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 4</h5>
-                      <p class="card-text">$40.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 4" data-price="40">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/aromanza.webp" class="card-img-top" alt="Producto 5">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 5</h5>
-                      <p class="card-text">$50.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 5" data-price="50">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/magicos6.webp" class="card-img-top" alt="Producto 6">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 6</h5>
-                      <p class="card-text">$60.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 6" data-price="60">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/magicos5.webp" class="card-img-top" alt="Producto 7">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 7</h5>
-                      <p class="card-text">$70.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 7" data-price="70">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/magicos4.webp" class="card-img-top" alt="Producto 8">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 8</h5>
-                      <p class="card-text">$80.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 8" data-price="80">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/magicos3.webp" class="card-img-top" alt="Producto 9">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 9</h5>
-                      <p class="card-text">$90.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 9" data-price="90">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/magicos2.webp" class="card-img-top" alt="Producto 10">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 10</h5>
-                      <p class="card-text">$100.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 10" data-price="100">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/magicos1.webp" class="card-img-top" alt="Producto 11">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 11</h5>
-                      <p class="card-text">$110.00</p>
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 11" data-price="110">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card">
-                  <img src="imagenes/magicos.webp" class="card-img-top" alt="Producto 12">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Producto 12</h5>
-                      <p class="card-text">$120.00</p>
-                      
-                      <button class="btn btn-primary add-to-cart" data-name="Producto 12" data-price="120">
-                          Agregar al carrito
-                      </button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-    
-  </section>
-  
-  
-  <!-- Carrito de Compras -->
-  <section class="container my-5">
-      <h2 class="text-center mb-4">Carrito de Compras</h2>
-      <table class="table table-bordered">
-          <thead>
-              <tr>
-                  <th>Producto</th>
-                  <th>Precio</th>
-                  <th>Acciones</th>
-              </tr>
-          </thead>
-          <tbody id="cart-items">
-              <!-- Items del carrito se agregarán aquí dinámicamente -->
-          </tbody>
-      </table>
-      <div class="text-end">
-          <h4>Total: $<span id="cart-total">0.00</span></h4>
-      </div>
-      <div class="text-end">
-          
-          <a id="pay-button" href="https://link.mercadopago.com.ar/sahumeriosmp" class="btn btn-success" role="button">Ir al Pago</a>
+ 
 
+  <!-- Productos -->
+  <section class="container my-5">
+    <h2 id="productos" class="text-center mb-4 bg-black text-white">Nuestros Productos</h2>
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/aromanza.webp" class="card-img-top" alt="Producto 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 1</h5>
+            <p class="card-text">$10.00</p>
+            <button onclick="showProductInfo(12)">Ver más información</button>
+            <div id="product-info-12" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 12: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
       </div>
+      <!-- Producto 2 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/aromanza1.webp" class="card-img-top" alt="Producto 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text">$15.00</p>
+            <button onclick="showProductInfo(11)">Ver más información</button>
+            <div id="product-info-11" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 11: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 3 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/aromanza2.webp" class="card-img-top" alt="Producto 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 3</h5>
+            <p class="card-text">$20.00</p>
+            <button onclick="showProductInfo(10)">Ver más información</button>
+            <div id="product-info-10" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 10: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 4 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/aromanza3.webp" class="card-img-top" alt="Producto 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 4</h5>
+            <p class="card-text">$25.00</p>
+            <button onclick="showProductInfo(9)">Ver más información</button>
+            <div id="product-info-9" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 9: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 5 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/aromanza4.webp" class="card-img-top" alt="Producto 5">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 5</h5>
+            <p class="card-text">$12.00</p>
+            <button onclick="showProductInfo(8)">Ver más información</button>
+            <div id="product-info-8" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 8: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 6 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/aromanza5.jpeg" class="card-img-top" alt="Producto 6">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 6</h5>
+            <p class="card-text">$18.00</p>
+            <button onclick="showProductInfo(7)">Ver más información</button>
+            <div id="product-info-7" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 7: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 7 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/magicos.webp" class="card-img-top" alt="Producto 7">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 7</h5>
+            <p class="card-text">$30.00</p>
+            <button onclick="showProductInfo(6)">Ver más información</button>
+            <div id="product-info-6" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 6: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 8 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/magicos1.webp" class="card-img-top" alt="Producto 8">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 8</h5>
+            <p class="card-text">$22.00</p>
+            <button onclick="showProductInfo(5)">Ver más información</button>
+            <div id="product-info-5" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 5: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 9 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/magicos2.webp" class="card-img-top" alt="Producto 9">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 9</h5>
+            <p class="card-text">$35.00</p>
+            <button onclick="showProductInfo(4)">Ver más información</button>
+            <div id="product-info-4" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 4: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 10 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/magicos4.webp" class="card-img-top" alt="Producto 10">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 10</h5>
+            <p class="card-text">$28.00</p>
+<button onclick="showProductInfo(3)">Ver más información</button>
+  <div id="product-info-3" class="product-info" style="display: none;">
+    <p>Información detallada del Producto 3: Características, beneficios, etc.</p>
+  </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 11 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/magicos3.webp" class="card-img-top" alt="Producto 11">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 11</h5>
+            <p class="card-text">$45.00</p>
+            <button onclick="showProductInfo(2)">Ver más información</button>
+            <div id="product-info-2" class="product-info" style="display: none;">
+              <p>Información detallada del Producto 2: Características, beneficios, etc.</p>
+            </div>          </div>
+        </div>
+      </div>
+      <!-- Producto 12 -->
+      <div class="col-md-3 mt-3">
+        <div class="card">
+          <img src="imagenes/magicos6.webp" class="card-img-top" alt="Producto 12">
+          <div class="card-body text-center">
+            <h5 class="card-title">Producto 12</h5>
+            <p class="card-text">$50.00</p>
+            <button onclick="showProductInfo(1)">Ver más información</button>
+            <div id="product-info-1" class="product-info" style="display: none;">
+            <p>Información detallada del Producto 1: Características, beneficios, etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  
+  
+ 
   
  
     
@@ -290,7 +276,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-4">
+      <div id="info" class="col-md-4">
         <h5>Conoce nuestros sahumerios</h5>
         <p class="text-white">Ofrecemos sahumerios de calidad, perfectos para crear ambientes relajantes y espirituales. Descubre aromas únicos que transformarán tu espacio y bienestar. ¡Haz de cada momento algo especial!</p>
       </div>
@@ -318,7 +304,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="carrito.js"></script>
-    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 
 
 
