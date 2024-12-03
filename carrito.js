@@ -6,3 +6,4 @@ function showProductInfo(productId) {
       infoDiv.style.display = 'none';
     }
   }
+
